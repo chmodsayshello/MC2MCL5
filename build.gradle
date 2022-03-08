@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group 'com.chmodsayshello'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io/' }
+}
+
+dependencies {
+    implementation 'com.github.Querz:NBT:6.1'
+    implementation 'org.json:json:20210307'
+}
+
+test {
+    useJUnitPlatform()
+}
